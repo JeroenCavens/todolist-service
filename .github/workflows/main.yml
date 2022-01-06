@@ -17,11 +17,11 @@ jobs:
 
       - name: Start Postgres for integration test
         uses: harmon758/postgresql-action@v1
-          with:
-            postgresql version: '11'  # See https://hub.docker.com/_/postgres for available versions
-            postgresql db: postgres
-            postgresql user: root
-            postgresql password: abc123
+        with:
+          postgresql version: '11'  # See https://hub.docker.com/_/postgres for available versions
+          postgresql db: postgres
+          postgresql user: root
+          postgresql password: abc123
 
       - name: Build, test and package project
         env:
