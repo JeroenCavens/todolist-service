@@ -6,7 +6,7 @@ metadata:
     app: todolist-service
 spec:
   ports:
-    - port: 27017
+    - port: 5432
   selector:                       # Selects any Pod with labels `app=review-service,tier=mongo`
     app: todolist-service
     tier: postgres
