@@ -18,7 +18,6 @@ public class ListController {
             listRepository.save(new TodoList("Klusjes","#a83632"));
         }
     }
-
     @Autowired
     private ListRepository listRepository;
 
@@ -60,6 +59,4 @@ public class ListController {
             return ResponseEntity.notFound().build();
         }
     }
-
-
 }

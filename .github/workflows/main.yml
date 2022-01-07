@@ -20,7 +20,7 @@ jobs:
         with:
           postgresql version: '11'  # See https://hub.docker.com/_/postgres for available versions
           postgresql db: postgres
-          postgresql user: root
+          postgresql user: postgres
           postgresql password: abc123
 
       - name: Build, test and package project
